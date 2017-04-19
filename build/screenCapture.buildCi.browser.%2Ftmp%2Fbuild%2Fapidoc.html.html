@@ -1,0 +1,141 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/sindresorhus/path-exists#readme">path-exists (v3.0.0)</a>
+</h1>
+<h4>Check if a path exists</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.path-exists">module path-exists</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.path-exists.path-exists">
+            function <span class="apidocSignatureSpan"></span>path-exists
+            <span class="apidocSignatureSpan">(resolve =&gt; { fs.access(fp, err =&gt; { resolve(!err)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.path-exists.sync">
+            function <span class="apidocSignatureSpan">path-exists.</span>sync
+            <span class="apidocSignatureSpan">(fp)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.path-exists" id="apidoc.module.path-exists">module path-exists</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.path-exists.path-exists" id="apidoc.element.path-exists.path-exists">
+        function <span class="apidocSignatureSpan"></span>path-exists
+        <span class="apidocSignatureSpan">(resolve =&gt; { fs.access(fp, err =&gt; { resolve(!err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fp =&gt; new Promise(resolve =&gt; { fs.access(fp, err =&gt; { resolve(!err);
+	});
+})</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.path-exists.sync" id="apidoc.element.path-exists.sync">
+        function <span class="apidocSignatureSpan">path-exists.</span>sync
+        <span class="apidocSignatureSpan">(fp)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fp =&gt; {
+	try {
+		fs.accessSync(fp);
+		return true;
+	} catch (err) {
+		return false;
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## API
+
+### pathExists(path)
+
+Returns a promise for a boolean of whether the path exists.
+
+### pathExists.<span class="apidocCodeKeywordSpan">sync</span>(path)
+
+Returns a boolean of whether the path exists.
+
+
+## Related
+
+- [path-exists-cli](https://github.com/sindresorhus/path-exists-cli) - CLI for this module
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
